@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Live-Service vs Traditional Games"
+  navbar:
+    left:
+      - href: blog.qmd
+        text: Blog
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: true
+    page-layout: full
