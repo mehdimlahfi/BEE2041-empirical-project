@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "",
+    "text": "Games are no longer just products that players buy once and complete. Many of the largest titles now operate as platforms: constantly updated, socially embedded, and designed to keep players returning. This post asks whether that model actually produces stronger player engagement."
+  },
+  {
+    "objectID": "blog.html#why-live-service-games-matter",
+    "href": "blog.html#why-live-service-games-matter",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Why live-service games matter",
+    "text": "Why live-service games matter\nThe video game industry has changed dramatically over the last two decades. What was once an industry built mainly around one-time purchases has increasingly shifted toward games designed as ongoing services. Today, many major titles use seasonal updates, online multiplayer ecosystems, battle passes, cosmetic stores, subscription services, and regular live events. In this model, games are not just products; they are platforms intended to keep players engaged continuously by manipulating them through FOMO (Fear of missing out).\nPlayer attention has therefore become one of the gaming industry’s most valuable resources. A traditional game may sell millions of copies during launch week, but many players eventually move on once they finish the content. By contrast, live-service games are explicitly designed to encourage long-term engagement through progression systems, social interaction, limited-time events, and constant updates.\nI am to compare live-service and traditional games using Steam player data. The analysis combines descriptive statistics with simple regression modelling to evaluate whether live-service games systematically differ from traditional games in terms of player engagement and retention."
+  },
+  {
+    "objectID": "blog.html#from-one-time-products-to-ongoing-platforms",
+    "href": "blog.html#from-one-time-products-to-ongoing-platforms",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "From one-time products to ongoing platforms",
+    "text": "From one-time products to ongoing platforms\nEarly video games in the 1980s and 1990s were constrained by hardware and distribution. Most titles were sold physically on cartridges or discs and were designed as complete experiences from release. Once players purchased a game, they owned the entire product. Multiplayer usually meant local play: friends sharing the same console or computer.\nWidespread internet access changed this model. Developers could update games after release, host online servers, and maintain persistent worlds. This created the foundation for the live-service model. Games such as RuneScape (2001) and World of Warcraft (2004) showed that players were willing to pay continuously for games that continuously evolved.\nThat economic logic is central to the modern gaming industry. Traditional games rely heavily on launch sales. Live-service games generate ongoing revenue through subscriptions, cosmetic purchases, expansions, battle passes, and microtransactions. As a result, modern game design increasingly prioritises retention and engagement rather than only initial sales."
+  },
+  {
+    "objectID": "blog.html#data-and-classification",
+    "href": "blog.html#data-and-classification",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Data and classification",
+    "text": "Data and classification\nThe dataset combines publicly available Steam player information with SteamCharts-style ranking data. The main variables are current active players, peak player counts, historical Steam activity, and game metadata. Each game was manually classified as either a live-service game or a traditional game.\nA game is classified as live-service if it contains features such as ongoing seasonal updates, battle passes, persistent online progression, frequent live events, or a long-term multiplayer ecosystem. A game is classified as traditional if it is mainly structured around a one-time purchase or a relatively self-contained gameplay experience.\n\n\n\n\n\n\n\n\n\n\n\n\n\nlive_service\ngames\nmean_average_players\nmedian_average_players\nmean_peak_players\nmean_retention\n\n\n\n\nTraditional\n12\n75715\n62607\n151149\n0.507\n\n\nLive service\n8\n281740\n127924\n524219\n0.541"
+  },
+  {
+    "objectID": "blog.html#evidence-1-live-service-games-are-a-minority-of-the-sample",
+    "href": "blog.html#evidence-1-live-service-games-are-a-minority-of-the-sample",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Evidence 1: Live-service games are a minority of the sample",
+    "text": "Evidence 1: Live-service games are a minority of the sample\nWithin the top 20 most-played Steam games in the sample, only 8 titles are classified as live-service games, while 12 are classified as traditional games.\n\n\n\nLive-service and traditional games in the sample\n\n\nThis matters because the live-service model is often discussed as if it dominates the whole market. In this sample, live-service games are not the majority by count. Their importance comes from their concentration of player activity."
+  },
+  {
+    "objectID": "blog.html#evidence-2-player-activity-is-highly-concentrated",
+    "href": "blog.html#evidence-2-player-activity-is-highly-concentrated",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Evidence 2: Player activity is highly concentrated",
+    "text": "Evidence 2: Player activity is highly concentrated\n\n\n\nMost-played Steam games in the sample\n\n\nThe distribution of player activity is extremely uneven. Counter-Strike 2 dominates the sample, with Dota 2 and PUBG: Battlegrounds also far ahead of most other games. This suggests a “winner-takes-most” structure: the live-service model can produce enormous success, but that success is concentrated among a small number of dominant titles.\nThe descriptive statistics support this pattern. Live-service games have a much higher mean current player count than traditional games. The mean for live-service games is about 281,740 players, compared with about 75,715 for traditional games. Median player counts also favour live-service games, though the gap is smaller, which shows that a few extremely successful games pull the live-service average upward."
+  },
+  {
+    "objectID": "blog.html#evidence-3-retention-is-higher-but-less-clearly-so",
+    "href": "blog.html#evidence-3-retention-is-higher-but-less-clearly-so",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Evidence 3: Retention is higher, but less clearly so",
+    "text": "Evidence 3: Retention is higher, but less clearly so\nPlayer count alone does not fully capture engagement. A game may attract a large audience initially but fail to retain it. To estimate retention, I use the following ratio:\n\\[\n\\text{Retention} = \\frac{\\text{Current players}}{\\text{Peak players}}\n\\]\n\n\n\nPlayer retention by game model\n\n\nThe boxplot suggests that live-service games have somewhat higher retention. The mean retention ratio is 0.541 for live-service games and 0.507 for traditional games. One major reason is the use of recurring engagement systems such as: seasonal updates, collaboration events, cosmetic rewards, strong player feedback taken, social multiplayer ecosystems all built on strong community feedback.\nA strong example is Fortnite’s “Astronomical” Travis Scott event in April 2020, which attracted over 27 million unique players across its limited-time concerts.\n\n\nThank you to everyone who attended and created content around the Travis Scott event! Over 27.7 million unique players in-game participated live 45.8 million times across the five events to create a truly Astronomical experience. 🤯🔥 pic.twitter.com/LSH0pLmGOS\n\n— Fortnite (@Fortnite) April 27, 2020\n\n\nHowever, the distributions overlap substantially. This means the descriptive difference is suggestive, but not decisive."
+  },
+  {
+    "objectID": "blog.html#regression-analysis",
+    "href": "blog.html#regression-analysis",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Regression analysis",
+    "text": "Regression analysis\nTo move beyond descriptive comparisons, I estimate two simple OLS regression models. The first examines whether live-service games are associated with larger active player bases:\n\\[\n\\log(\\text{Current players}_i) = \\alpha + \\beta\\text{LiveService}_i + \\varepsilon_i\n\\]\nThe second examines whether live-service games are associated with higher retention:\n\\[\n\\text{Retention}_i = \\alpha + \\beta\\text{LiveService}_i + \\varepsilon_i\n\\]\n\n\n\n\n\n\n\n\n\n\n\nModel\nDependent variable\nLive-service coefficient\np-value\nR-squared\nInterpretation\n\n\n\n\nModel 1\nlog current players\n1.000\n0.006\n0.348\nLive-service games have much larger active player bases.\n\n\nModel 2\nretention\n0.034\n0.455\n0.031\nLive-service games have slightly higher retention, but the result is not statistically significant.\n\n\n\nBecause Model 1 uses a logged dependent variable, the live-service coefficient can be interpreted approximately as a percentage difference. A coefficient of 1.000 implies that live-service games have about 172% higher current player counts on average than traditional games. This is statistically significant at conventional levels.\nModel 2 tells a different story. The live-service coefficient is positive, but small and statistically insignificant. This means the data does not provide strong evidence that live-service status alone explains better retention."
+  },
+  {
+    "objectID": "blog.html#interpretation-scale-matters-more-than-retention",
+    "href": "blog.html#interpretation-scale-matters-more-than-retention",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Interpretation: Scale matters more than retention",
+    "text": "Interpretation: Scale matters more than retention\nThe central finding is that live-service games appear much stronger on scale than on retention. They clearly attract and maintain larger active player communities. However, the evidence that they retain a higher proportion of their peak player base is weaker.\nThis distinction is important. It suggests that live-service success may rely less on a universally superior retention rate and more on network effects, social interaction, continuous content pipelines, and large existing communities. Once a live-service game becomes large, its size becomes part of its appeal: players join because other players are already there.\nTraditional games operate differently. Their success is often based on delivering a complete, high-quality experience rather than maintaining constant engagement indefinitely. This does not make them inferior. It means they compete with a different strategy and player base in mind."
+  },
+  {
+    "objectID": "blog.html#some-limitations-to-consider",
+    "href": "blog.html#some-limitations-to-consider",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Some limitations to consider",
+    "text": "Some limitations to consider\nThere are several limitations to this analysis. First, the classification of live-service games was manually coded, so some borderline cases may be debatable. Second, the regressions should not be interpreted causally. Live-service status is not randomly assigned, and highly popular games may be more likely to adopt live-service mechanics because they already have large audiences. Third, Steam data does not capture the whole gaming market, especially console and mobile gaming. Finally, current players and peak players are imperfect measures of engagement because they cannot fully capture player satisfaction, loyalty, or monetisation."
+  },
+  {
+    "objectID": "blog.html#conclusion",
+    "href": "blog.html#conclusion",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe gaming industry has increasingly shifted toward live-service models because they create opportunities for continuous engagement and recurring revenue. This analysis finds strong evidence that live-service games maintain significantly larger active player bases than traditional games. However, the evidence that they retain players substantially better is weaker than expected.\nThe modern gaming dilemma is therefore not simply whether live-service games are more successful. It is whether the industry’s growing focus on continuous engagement changes what games are designed to be: complete experiences, or persistent platforms competing for player attention."
+  },
+  {
+    "objectID": "blog.html#appendix-regression-output",
+    "href": "blog.html#appendix-regression-output",
+    "title": "Live-Service vs Traditional Games: The Modern Gaming Dilemma",
+    "section": "Appendix: regression output",
+    "text": "Appendix: regression output\n\n\nMODEL 1: log_current_players on live_service\n                             OLS Regression Results                            \n===============================================================================\nDep. Variable:     log_current_players   R-squared:                       0.348\nModel:                             OLS   Adj. R-squared:                  0.311\nMethod:                  Least Squares   F-statistic:                     9.594\nDate:                 Thu, 07 May 2026   Prob (F-statistic):            0.00622\nTime:                         18:07:14   Log-Likelihood:                -20.401\nNo. Observations:                   20   AIC:                             44.80\nDf Residuals:                       18   BIC:                             46.79\nDf Model:                            1                                         \nCovariance Type:             nonrobust                                         \n================================================================================\n                   coef    std err          t      P&gt;|t|      [0.025      0.975]\n--------------------------------------------------------------------------------\nconst           11.1214      0.204     54.463      0.000      10.692      11.550\nlive_service     1.0000      0.323      3.097      0.006       0.322       1.678\n==============================================================================\nOmnibus:                        1.773   Durbin-Watson:                   1.940\nProb(Omnibus):                  0.412   Jarque-Bera (JB):                1.135\nSkew:                           0.579   Prob(JB):                        0.567\nKurtosis:                       2.856   Cond. No.                         2.45\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n\nMODEL 2: retention on live_service\n                            OLS Regression Results                            \n==============================================================================\nDep. Variable:              retention   R-squared:                       0.031\nModel:                            OLS   Adj. R-squared:                 -0.022\nMethod:                 Least Squares   F-statistic:                    0.5829\nDate:                Thu, 07 May 2026   Prob (F-statistic):              0.455\nTime:                        18:07:14   Log-Likelihood:                 19.262\nNo. Observations:                  20   AIC:                            -34.52\nDf Residuals:                      18   BIC:                            -32.53\nDf Model:                           1                                         \nCovariance Type:            nonrobust                                         \n================================================================================\n                   coef    std err          t      P&gt;|t|      [0.025      0.975]\n--------------------------------------------------------------------------------\nconst            0.5074      0.028     18.052      0.000       0.448       0.566\nlive_service     0.0339      0.044      0.763      0.455      -0.059       0.127\n==============================================================================\nOmnibus:                        0.088   Durbin-Watson:                   2.130\nProb(Omnibus):                  0.957   Jarque-Bera (JB):                0.267\nSkew:                          -0.121   Prob(JB):                        0.875\nKurtosis:                       2.488   Cond. No.                         2.45\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified."
+  }
+]
